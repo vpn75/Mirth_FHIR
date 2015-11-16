@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<style>
+td, th {
+	padding: 10px;
+}
+
+</style> 
+    <link href="bower/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower/css/cornerstone.css" rel="stylesheet">
+
+	<script src="bower/js/jquery.min.js"></script>
+	<script src="bower/js/bootstrap.min.js"></script>
+	<script src="bower/js/fhir_patient.js"></script>
+
+</HEAD>
+<BODY>
+
+<div class="container">
+	<div id="main">
+		<div class="row">
+			<div id="title" class="jumbotron"><h2>Mirth FHIR Patient query</h2></div>
+		</div>
+		<div class="row">
+			<form id="search" class="form-inline" role="form">
+				<div class="form-group">
+					<label for="inputMRN" class="">Enter Facility MRN:</label>
+					<input type="text" class="form-control" id="inputMRN">
+					<button type="submit" class="btn btn-primary">Search</button>
+					
+				</div>
+			</form>
+		</div>
+		<br>
+		<div class="row" id="patient_details">
+			<div class="col-md-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+						Patient Details
+						</h3>
+					</div>
+					<div class="panel-body">
+						
+							<div id="name"></div>
+							<div id="gender"></div>
+							<div id="dob"></div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<table class="table table-striped">
+					<thead>
+					<tr>
+						<th>Assigning Authority</th>
+						<th>MRN</th>
+						
+					</tr>
+					</thead>
+					<tbody id="mrnlist">
+					</tbody>
+				</table>
+			</div>
+			<div class="col-md-6"></div>
+	<div>
+</div>
+
+
+</BODY>
+</HTML>
