@@ -1,0 +1,65 @@
+{
+  "resourceType": "Patient",
+  "identifier": [
+    {
+      "use": "official",
+      "label": "EPIC E-number",
+      "value": "E123456789",
+      "assigner": {
+        "reference": "EMRN"
+      }
+    },
+    {
+      "use": "official",
+      "label": "Facility A",
+      "value": "A0100009",
+      "assigner": {
+        "reference": "HIS_A"
+      }
+    },
+    {
+      "use": "official",
+      "label": "Facility B",
+      "value": "B0102003,
+      "assigner": {
+        "reference": "HIS_B"
+      }
+    },
+    {
+      "use": "official",
+      "label": "Facility C",
+      "value": "C1023510",
+      "assigner": {
+        "reference": "HIS_C"
+      }
+    },
+    {
+      "use": "official",
+      "label": "Facility D",
+      "value": "D901300",
+      "assigner": {
+        "reference": "HIS_D"
+      }
+    }
+  ],
+  "name": [
+    {
+      "family": [
+        "SIMPSON"
+      ],
+      "given": [
+        "HOMER",
+        "J"
+      ]
+    }
+  ],
+  "gender": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/AdministrativeGender",
+        "code": "M"
+      }
+    ]
+  },
+  "birthDate": "1969-04-01"
+}
